@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quan_img"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_margin="@dimen/dp_10"
+                    android:src="@drawable/quan_img" />
+
+                <TextView
+                    android:id="@+id/quan_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_130"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:text="XXXXX"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/quan_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_230"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:text="2017_02_2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/quan_text_name_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_120"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="XXXX"
+                    android:textSize="22sp" />
+
+                <ImageView
+
+                    android:id="@+id/img_quan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_below="@+id/quan_text_name_two"
+                  android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            <ImageView
+                android:id="@+id/img_dian"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_250"
+                android:layout_below="@id/img_quan"
+                android:src="@drawable/liang" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

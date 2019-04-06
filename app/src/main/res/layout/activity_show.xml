@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ShowActivity">
+    <FrameLayout
+        android:id="@+id/Frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:background="@drawable/foot">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/show_home"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/button_home"/>
+
+            <RadioButton
+                android:id="@+id/show_menu"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/button_circle" />
+
+            <RadioButton
+                android:id="@+id/show_shop_car"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/show_second"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/button_list"/>
+
+            <RadioButton
+                android:id="@+id/show_mine"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/button_my"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/show_ishop"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/commom_tab_btn_shopng_cart_n_hdpi" />
+
+    </RelativeLayout>
+</LinearLayout>

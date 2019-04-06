@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity"
+    android:background="@drawable/ww">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="请输入账号"
+       android:id="@+id/edit_zhang"
+       android:layout_marginLeft="@dimen/dp_10"
+       android:layout_marginRight="@dimen/dp_10"
+       android:layout_marginTop="@dimen/dp_60"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:id="@+id/edit_mima"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_120"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_mima"
+        android:text="记住密码"
+        android:layout_marginTop="@dimen/dp_180"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+       <TextView
+           android:id="@+id/text_zhuce"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dp_180"
+           android:textSize="@dimen/sp_12"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/dp_10"
+           android:text="立即注册" />
+
+   </RelativeLayout>
+    <Button
+        android:id="@+id/btn_deng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_250"
+        android:text="登录"/>
+</RelativeLayout>

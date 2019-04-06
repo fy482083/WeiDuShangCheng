@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_left_seaech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/san" />
+
+        <EditText
+            android:id="@+id/text_suo_search"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:hint="请输入要搜索的内容"
+            style="@style/Base.AlertDialog.AppCompat"/>
+        <ImageView
+            android:id="@+id/img_cha_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cha"
+            android:layout_marginLeft="@dimen/dp_270"
+            android:layout_marginTop="@dimen/dp_5" />
+        <ImageView
+            android:id="@+id/img_rightsearch"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sousuo" />
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview_serch"
+        android:layout_below="@+id/RelativeLayout"
+        android:layout_height="wrap_content">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+   <ImageView
+       android:id="@+id/img_cuo"
+       android:layout_width="@dimen/dp_100"
+       android:layout_height="@dimen/dp_100"
+       android:src="@drawable/cuo"
+       android:layout_below="@id/recyclerview_serch"
+       android:visibility="gone"
+       android:layout_marginTop="@dimen/dp_100"
+       android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/text_cuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抱歉，没有找到该商品"
+        android:layout_below="@+id/img_cuo"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_105"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

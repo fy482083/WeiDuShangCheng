@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.XQActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/xq_text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:src="@drawable/back" />
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/XQxbanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_300"
+                android:layout_below="@id/xq_text_back"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_24" />
+
+            <TextView
+                android:id="@+id/xq_text_price"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/XQxbanner"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_14"
+                android:text="159"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/xq_text_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/XQxbanner"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_24"
+                android:text="件"
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/xq_text_xiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xq_text_price"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="详情长"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/xq_text_xiangqing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xq_text_xiang"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="商品详情"
+                android:textSize="@dimen/sp_20" />
+
+            <ImageView
+                android:id="@+id/xq_iamg_xiang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_306"
+                android:layout_below="@id/xq_text_xiangqing"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+
+                android:id="@+id/xq_text_chanpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xq_iamg_xiang"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="产品介绍"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/xq_text_chanpinxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xq_text_chanpin"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="产品"
+                android:textColor="#f0f"
+                android:textSize="@dimen/sp_18" />
+
+            <ImageView
+                android:id="@+id/img_car_buy"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_below="@id/xq_iamg_xiang"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/buy_car" />
+
+            <ImageView
+                android:id="@+id/img_buy"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_below="@id/img_car_buy"
+                android:layout_alignParentRight="true"
+                android:paddingTop="@dimen/dp_10"
+                android:src="@drawable/buy" />
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/xq_text_chanpinxiang" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
